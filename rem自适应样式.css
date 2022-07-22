@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 10px;
+}
+#top,#main,#bottom{
+    width: 100%;
+}
+.img{
+    background-color: aqua;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+}
+#top{
+    position: fixed;/*固定位置*/
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2rem;
+    z-index: 1000;
+    background-color: antiquewhite;
+}
+#logo{
+    width: 4rem;
+    height: 1rem;
+    vertical-align: -webkit-baseline-middle;/*垂直居中*/
+}
+#main{
+    height: auto;
+    position: absolute;
+    top: 2rem;
+    bottom: 2rem;
+    background-color: blueviolet;
+}
+#main ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 0.5rem;
+}
+#main .logo{
+    width: 3.6rem;
+    height: 2rem;
+    vertical-align: -webkit-baseline-middle;
+}
+#main .shopcar{
+    width: 1rem ;
+    height: 1rem;
+    vertical-align:middle;/*垂直居中*/
+}
+#main ul li{
+    flex: 1 1 3rem;
+    display: flex;
+    background-color: aquamarine;
+    border-bottom: 1px solid #dcdcdc;
+    align-items: center;
+}
+#main ul li div{
+    margin-left: 0.2rem;
+    margin-right: 0.5rem;
+}
+#main ul li div:nth-child(2){
+    word-break: break-all;
+}
+#bottom{
+    position: fixed;/*固定位置*/
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2rem;
+    z-index: 1000;
+    background-color: antiquewhite;
+    display: flex;
+}
+#bottom div{
+    flex: 1 1 auto;
+    text-align: center;
+}
+#bottom div .img{
+    width: 1.5rem;
+    height: 1.5rem;
+    vertical-align: -webkit-baseline-middle;
+}
